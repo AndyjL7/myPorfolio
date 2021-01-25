@@ -1,0 +1,84 @@
+/* Universal Styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: cursive;
+    font-weight: bold;
+    margin-top: 40px;
+    padding-top: 50px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+/* Header section */
+
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #000;
+    right: -300px;
+    transition: 600ms ease-out 200ms;
+    flex-wrap: wrap;
+}
+
+#sidebar.active {
+    right: 0;
+}
+
+#sidebar a {
+    color: white;
+}
+
+#sidebar ul li {
+    list-style: none;
+    font-size: 20px;
+    padding: 20px 24px;
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    top: 30px;
+    right: 330px;
+}
+
+.toggle-btn span {
+    width: 45px;
+    height: 4px;
+    background: #000;
+    display: block;
+    margin-top: 4px;
+}
+
+/* Main */
+
+p {
+    font-size: large;
+    letter-spacing: 0.5px;
+}
+
+.portrait {
+    width: 300px;
+    height: 550px;
+    border-radius: 12px;
+    float: left;
+    padding-right: 10px;
+
+}
+
+#skills h2 {
+    text-align: center;
+}
+
+.fab {
+    font-family: "https://fontawesome.com/";
+}
